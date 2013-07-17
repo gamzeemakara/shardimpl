@@ -1,0 +1,12 @@
+Donations
+	[Adding more]
+		If you wish to add more donation options, go to the DonationManager class (package com.rs.worldserver.sql)
+		In the "startProcess" method, simply add an additional case, which corresponds to the productId found
+		in the Paypal script provided in the website section.
+		
+Voting
+	[Server sided]
+		In the reward command class, modify the cases to match that of your vote rewards in your admincp
+		
+	[Website]
+		This may be done through the RTL admin control panel

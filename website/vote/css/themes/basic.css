@@ -1,0 +1,76 @@
+* { margin: 0; padding: 0; }
+html { /*overflow-y: scroll;*/ }
+body { height: 100%;  }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+article, aside, figure, footer, hgroup, menu, nav, section { display: block; }
+a:focus { outline: 0; }
+
+#page-wrap { 
+    width: 500px; margin: 40px auto 5px; 
+    padding: 0 0 8px 0;
+	border: 3px double black;
+
+}
+header {
+	display: block; 
+	border-bottom: 1px solid black;
+}
+
+#main-content { padding: 14px; }
+
+h1 { font: bold 14px Tahoma, Calibri, Verdana, Geneva, sans-serif; text-align:center; padding: 8px; }
+p { margin: 0 0 15px 0; }
+ 
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.votelinks ul { 
+    list-style: none; padding: 7px 0; position: relative; 
+	text-align: center;line-height: 35px;
+}
+.votelinks ul li { display: inline; }
+.votelinks ul li a {
+	display: inline;
+	padding: 2.5px 5px;
+	padding: 2px 2px;
+	margin: 10px 5px 10px 0;
+}
+.votelinks ul li a:hover {}	
+.votelinks ul li a:active, .votelinks ul li a.current {}
+
+
+#rewards {
+	margin:auto; 
+	width:500xp;
+	border: 1px solid black;
+}
+#rewards th {
+	border: 1px solid black;
+	height: 15px;
+	padding: 3px 10px;
+}
+#rewards td {
+	border: 1px solid black;
+	height: 50px;
+	padding: 0 10px;
+}
+#rewards tr.active {
+	font-weight: bold;
+}
+
+#rewards tbody tr:hover {
+	cursor: pointer;
+}
+#rewards thead {}
+
+.textField {
+	padding: 4px 5px;
+}
+
+footer { margin: 0 auto; width: 500px; }
+footer a {color: black;}
